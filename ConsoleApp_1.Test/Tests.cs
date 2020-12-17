@@ -243,16 +243,14 @@ namespace ConsoleApp_1.Test
         #region KaracaEncrypt
         //Make a function that encrypts a given input with these steps:
         //Input: "apple"
-        //Step 1: Reverse the input: "elppa"
+        //Step 1: Reverse the input
         //Step 2: Replace all vowels using the following chart:
         //a => 0
         //e => 1
         //i => 2
         //o => 2
         //u => 3
-        // "1lpp0"
-        //Step 3: Add "aca" to the end of the word: "1lpp0aca"
-        //Output: "1lpp0aca"
+        //Step 3: Add "aca" to the end of the word
         //Encrypt("banana") => "0n0n0baca"
 
         [TestMethod]
@@ -296,6 +294,17 @@ namespace ConsoleApp_1.Test
         }
         #endregion
 
-
+        #region PricingCalculation
+        //Make a function that calculates discount according to a given input following these rules:
+        //Input must be a membership level value from the following chart and a price:
+        //Bronze => discount 5%
+        //Silver => discount 10%
+        //Gold => discount 15%
+        //Platinum => discount = 25%
+        //Each membershiplevel should have its own class and implement the same interface with a method to calculate price with discount
+        //Depending on the membership level the function should create an instance of the class and calculate the price with discount
+        //If input does not match any membership level, original price should be returned
+        //DiscountedPrice(Bronze, 25) => 23.75
+        #endregion
     }
 }
