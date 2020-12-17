@@ -6,9 +6,6 @@ namespace ConsoleApp_1.Test
     public class Tests
     {
         #region CountDs
-        // Create a function that counts how many D's are in a sentence.
-        // CountDs("My friend Dylan got distracted in school.") => 4
-
         //[TestMethod]
         //public void TestMethod1()
         //{
@@ -35,10 +32,6 @@ namespace ConsoleApp_1.Test
         #endregion
 
         #region SmallerNum
-        //Create a function that returns the smaller number.
-        //If both numbers tie, return either number.
-        //SmallerNum("21", "44") => "21"
-
         //[TestMethod]
         //public void TestMethod4()
         //{
@@ -89,10 +82,6 @@ namespace ConsoleApp_1.Test
         #endregion
 
         #region Repetition
-        //Create a recursive function that takes two parameters and repeats the string n number of times. 
-        //The first parameter txt is the string to be repeated and the second parameter is the number of times the string is to be repeated.
-        //Repetition("ab", 3) => "ababab"
-
         //[TestMethod]
         //public void TestMethod10()
         //{
@@ -143,168 +132,141 @@ namespace ConsoleApp_1.Test
         #endregion
 
         #region ReverseCase
-        //Given a string, create a function to reverse the case. All lower-cased letters should be upper-cased, and vice versa.
-        //ReverseCase("Happy Birthday") => "hAPPY bIRTHDAY"
+        //[TestMethod]
+        //public void TestMethod16()
+        //{
+        //    var result = Program.ReverseCase("Happy Birthday");
 
-        [TestMethod]
-        public void TestMethod1()
-        {
-            var result = Program.ReverseCase("Happy Birthday");
+        //    Assert.AreEqual("hAPPY bIRTHDAY", result);
+        //}
 
-            Assert.AreEqual("hAPPY bIRTHDAY", result);
-        }
+        //[TestMethod]
+        //public void TestMethod17()
+        //{
+        //    var result = Program.ReverseCase("MANY THANKS");
 
-        [TestMethod]
-        public void TestMethod2()
-        {
-            var result = Program.ReverseCase("MANY THANKS");
+        //    Assert.AreEqual("many thanks", result);
+        //}
 
-            Assert.AreEqual("many thanks", result);
-        }
+        //[TestMethod]
+        //public void TestMethod18()
+        //{
+        //    var result = Program.ReverseCase("sPoNtAnEoUs");
 
-        [TestMethod]
-        public void TestMethod3()
-        {
-            var result = Program.ReverseCase("sPoNtAnEoUs");
+        //    Assert.AreEqual("SpOnTaNeOuS", result);
+        //}
 
-            Assert.AreEqual("SpOnTaNeOuS", result);
-        }
+        //[TestMethod]
+        //public void TestMethod19()
+        //{
+        //    var result = Program.ReverseCase("eXCELLENT, yOuR mAJESTY");
 
-        [TestMethod]
-        public void TestMethod4()
-        {
-            var result = Program.ReverseCase("eXCELLENT, yOuR mAJESTY");
-
-            Assert.AreEqual("Excellent, YoUr Majesty", result);
-        }
+        //    Assert.AreEqual("Excellent, YoUr Majesty", result);
+        //}
         #endregion
 
         #region ArrayOfMultiples
-        //Create a function that takes two numbers as arguments(num, length) and returns an array of multiples of num until the array length reaches length.
-        //ArrayOfMultiples(7, 5) => [7, 14, 21, 28, 35]
+        //[TestMethod]
+        //public void TestMethod20()
+        //{
+        //    var result = Program.ArrayOfMultiples(7, 5);
 
-        [TestMethod]
-        public void TestMethod5()
-        {
-            var result = Program.ArrayOfMultiples(7, 5);
+        //    CollectionAssert.AreEqual(new int[] { 7, 14, 21, 28, 35 }, result);
+        //}
 
-            CollectionAssert.AreEqual(new int[] { 7, 14, 21, 28, 35 }, result);
-        }
+        //[TestMethod]
+        //public void TestMethod21()
+        //{
+        //    var result = Program.ArrayOfMultiples(12, 10);
 
-        [TestMethod]
-        public void TestMethod6()
-        {
-            var result = Program.ArrayOfMultiples(12, 10);
+        //    CollectionAssert.AreEqual(new int[] { 12, 24, 36, 48, 60, 72, 84, 96, 108, 120 }, result);
+        //}
 
-            CollectionAssert.AreEqual(new int[] { 12, 24, 36, 48, 60, 72, 84, 96, 108, 120 }, result);
-        }
+        //[TestMethod]
+        //public void TestMethod22()
+        //{
+        //    var result = Program.ArrayOfMultiples(17, 7);
 
-        [TestMethod]
-        public void TestMethod7()
-        {
-            var result = Program.ArrayOfMultiples(17, 7);
+        //    CollectionAssert.AreEqual(new int[] { 17, 34, 51, 68, 85, 102, 119 }, result);
+        //}
 
-            CollectionAssert.AreEqual(new int[] { 17, 34, 51, 68, 85, 102, 119 }, result);
-        }
+        //[TestMethod]
+        //public void TestMethod23()
+        //{
+        //    var result = Program.ArrayOfMultiples(630, 14);
 
-        [TestMethod]
-        public void TestMethod8()
-        {
-            var result = Program.ArrayOfMultiples(630, 14);
+        //    CollectionAssert.AreEqual(new int[] { 630, 1260, 1890, 2520, 3150, 3780, 4410, 5040, 5670, 6300, 6930, 7560, 8190, 8820 }, result);
+        //}
 
-            CollectionAssert.AreEqual(new int[] { 630, 1260, 1890, 2520, 3150, 3780, 4410, 5040, 5670, 6300, 6930, 7560, 8190, 8820 }, result);
-        }
+        //[TestMethod]
+        //public void TestMethod24()
+        //{
+        //    var result = Program.ArrayOfMultiples(140, 3);
 
-        [TestMethod]
-        public void TestMethod9()
-        {
-            var result = Program.ArrayOfMultiples(140, 3);
+        //    CollectionAssert.AreEqual(new int[] { 140, 280, 420 }, result);
+        //}
 
-            CollectionAssert.AreEqual(new int[] { 140, 280, 420 }, result);
-        }
+        //[TestMethod]
+        //public void TestMethod25()
+        //{
+        //    var result = Program.ArrayOfMultiples(7, 8);
 
-        [TestMethod]
-        public void TestMethod10()
-        {
-            var result = Program.ArrayOfMultiples(7, 8);
+        //    CollectionAssert.AreEqual(new int[] { 7, 14, 21, 28, 35, 42, 49, 56 }, result);
+        //}
 
-            CollectionAssert.AreEqual(new int[] { 7, 14, 21, 28, 35, 42, 49, 56 }, result);
-        }
+        //[TestMethod]
+        //public void TestMethod26()
+        //{
+        //    var result = Program.ArrayOfMultiples(11, 21);
 
-        [TestMethod]
-        public void TestMethod11()
-        {
-            var result = Program.ArrayOfMultiples(11, 21);
-
-            CollectionAssert.AreEqual(new int[] { 11, 22, 33, 44, 55, 66, 77, 88, 99, 110, 121, 132, 143, 154, 165, 176, 187, 198, 209, 220, 231 }, result);
-        }
+        //    CollectionAssert.AreEqual(new int[] { 11, 22, 33, 44, 55, 66, 77, 88, 99, 110, 121, 132, 143, 154, 165, 176, 187, 198, 209, 220, 231 }, result);
+        //}
         #endregion
 
         #region KaracaEncrypt
-        //Make a function that encrypts a given input with these steps:
-        //Input: "apple"
-        //Step 1: Reverse the input
-        //Step 2: Replace all vowels using the following chart:
-        //a => 0
-        //e => 1
-        //i => 2
-        //o => 2
-        //u => 3
-        //Step 3: Add "aca" to the end of the word
-        //Encrypt("banana") => "0n0n0baca"
+        //[TestMethod]
+        //public void TestMethod27()
+        //{
+        //    var result = Program.Encrypt("karaca");
 
-        [TestMethod]
-        public void TestMethod12()
-        {
-            var result = Program.Encrypt("karaca");
+        //    Assert.AreEqual("0c0r0kaca", result);
+        //}
 
-            Assert.AreEqual("0c0r0kaca", result);
-        }
+        //[TestMethod]
+        //public void TestMethod28()
+        //{
+        //    var result = Program.Encrypt("burak");
 
-        [TestMethod]
-        public void TestMethod13()
-        {
-            var result = Program.Encrypt("burak");
+        //    Assert.AreEqual("k0r3baca", result);
+        //}
 
-            Assert.AreEqual("k0r3baca", result);
-        }
+        //[TestMethod]
+        //public void TestMethod29()
+        //{
+        //    var result = Program.Encrypt("alpaca");
 
-        [TestMethod]
-        public void TestMethod14()
-        {
-            var result = Program.Encrypt("alpaca");
+        //    Assert.AreEqual("0c0pl0aca", result);
+        //}
 
-            Assert.AreEqual("0c0pl0aca", result);
-        }
+        //[TestMethod]
+        //public void TestMethod30()
+        //{
+        //    var result = Program.Encrypt("banana");
 
-        [TestMethod]
-        public void TestMethod15()
-        {
-            var result = Program.Encrypt("banana");
+        //    Assert.AreEqual("0n0n0baca", result);
+        //}
 
-            Assert.AreEqual("0n0n0baca", result);
-        }
+        //[TestMethod]
+        //public void TestMethod31()
+        //{
+        //    var result = Program.Encrypt("hello");
 
-        [TestMethod]
-        public void TestMethod16()
-        {
-            var result = Program.Encrypt("hello");
-
-            Assert.AreEqual("2ll1haca", result);
-        }
+        //    Assert.AreEqual("2ll1haca", result);
+        //}
         #endregion
 
         #region PricingCalculation
-        //Make a function that calculates discount according to a given input following these rules:
-        //Input must be a membership level value from the following chart and a price:
-        //Bronze => discount 5%
-        //Silver => discount 10%
-        //Gold => discount 15%
-        //Platinum => discount = 25%
-        //Each membershiplevel should have its own class and implement the same interface with a method to calculate price with discount
-        //Depending on the membership level the function should create an instance of the class and calculate the price with discount
-        //If input does not match any membership level, original price should be returned
-        //DiscountedPrice(Bronze, 25) => 23.75
+        
         #endregion
     }
 }
