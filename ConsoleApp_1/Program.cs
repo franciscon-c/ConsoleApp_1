@@ -65,6 +65,8 @@
             return default;
         }
 
+        //Make a function to print first 15 prime numbers
+
         //Make a function that calculates discount according to a given input following these rules:
         //Input must be a membership level value from the following chart and a price:
         //Bronze => discount 5%
